@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Sudoku</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Vibe Sudoku</h1>
+            <p class="subtitle">Challenge your mind with a fresh puzzle</p>
+        </header>
+
+        <div class="game-controls">
+            <button id="newGameBtn" class="btn btn-primary">New Game</button>
+            <button id="checkBtn" class="btn btn-secondary">Check Solution</button>
+            <button id="hintBtn" class="btn btn-secondary">Hint</button>
+            <select id="difficultySelect" class="difficulty-select">
+                <option value="easy">Easy</option>
+                <option value="medium" selected>Medium</option>
+                <option value="hard">Hard</option>
+                <option value="expert">Expert</option>
+            </select>
+        </div>
+
+        <div id="message" class="message"></div>
+
+        <div id="sudokuGrid" class="sudoku-grid"></div>
+
+        <div class="game-info">
+            <div class="info-item">
+                <span class="label">Difficulty:</span>
+                <span id="currentDifficulty" class="value">Medium</span>
+            </div>
+            <div class="info-item">
+                <span class="label">Filled:</span>
+                <span id="filledCells" class="value">0/81</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="sudoku.js"></script>
+</body>
+</html>
